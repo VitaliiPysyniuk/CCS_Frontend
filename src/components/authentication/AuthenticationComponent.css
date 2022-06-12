@@ -1,0 +1,38 @@
+.custom_cl {
+    color: rgba(255, 255, 255, .55) !important;
+}
+
+.min_wth_40 {
+    min-width: 40% !important;
+}
+
+.wdt_100 {
+    width: 100% !important;
+}
+
+.wth_60 {
+    width: 60% !important;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.mw_400 {
+    max-width: 400px;
+}
+
+.fw-1000 {
+    font-weight: 1000 !important;
+}
+
+.cl_white {
+    color: #fff;
+}
+
+.bc_danger {
+    background-color: rgb(220, 53, 69);
+}

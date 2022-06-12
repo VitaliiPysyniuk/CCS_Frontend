@@ -1,0 +1,61 @@
+.mw_20 {
+    max-width: 20% !important;
+}
+
+.bc_none {
+    /*background-color: #ffffff !important;*/
+    border: none !important;
+}
+
+button:hover {
+    background-color: #e8e8e8 !important;
+}
+
+
+.menu {
+    width: 100%;
+    background-color: #d5d5d5 !important;
+    position: fixed;
+    height: 36px!important;
+    z-index: 999;
+}
+
+.menu-new {
+    width: 100%;
+    background-color: #d5d5d5 !important;
+    position: fixed;
+    height: 66px!important;
+    z-index: 999;
+}
+
+.bt-menu {
+    background-color: #d5d5d5 !important;
+}
+
+.t-66 {
+    position: absolute;
+    top: 66px!important;
+}
+
+.t-36 {
+    position: absolute;
+    top: 36px!important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.date-wt {
+    width: 86px;
+}
+
+.input-border {
+    border: 0 !important;
+    border-bottom: 2px solid black!important;
+    background-color: #d5d5d5 !important;
+}
+

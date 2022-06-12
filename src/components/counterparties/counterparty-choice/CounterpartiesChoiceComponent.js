@@ -1,0 +1,41 @@
+import React from 'react';
+import './CounterpartySelectModalWindowComponent.css';
+
+import {CounterpartyChoiceComponent} from "./CounterpartyChoiceComponent";
+
+import closeIcon from "../../../icons/close.png";
+
+export const CounterpartiesChoiceComponent = ({visible, counterparties, closeCounterpartySelect, selectCounterparty}) => {
+    if (!visible)
+        return null
+
+    return (
+        <div className="choice-custom-modal">
+            <div className='choice-custom-modal-dialog' onClick={e => e.stopPropagation()}>
+                <div className="position-relative">
+                    <div className="p-1 d-flex justify-content-end menu">
+                        <button className="btn p-0 me-2 bc_none bt-menu" onClick={closeCounterpartySelect} title="Закрити вікно">
+                            <img src={closeIcon}/>
+                        </button>
+                    </div>
+                    <table className="table table-bordered t-36">
+                        <thead>
+                        <tr>
+                            <th className="col-md-1" scope="col">Код</th>
+                            <th scope="col">Назва</th>
+                            <th className="col-md-2" scope="col">Тип</th>
+                            <th className="col-md-4" scope="col">Контактні дані</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {counterparties && counterparties.map(counterparty => {
+                            return <CounterpartyChoiceComponent counterparty={counterparty} key={counterparty.id}
+                                                                select={selectCounterparty}/>
+                        })}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    )
+}
